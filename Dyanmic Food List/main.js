@@ -17,6 +17,6 @@ function addFood(food) {
 
 }
 
-for (let i = 0; i < menu.length, i++) {
+for (let i = 0; i < menu.length; i++) {
     addFood(menu[i]);
 }
