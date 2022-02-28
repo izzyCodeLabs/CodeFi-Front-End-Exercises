@@ -9,7 +9,7 @@ function updateClock() {
     let h = now.getHours();
     let m = now.getMinutes();
     let s = now.getSeconds();
-    clock.innerHTML = `It's currently ${h}:${m.toLocaleString(`en-US`,{minimumI0ntegerDigits: 2, useGrouping: false})}:${s.toLocaleString(`en-US`,{minimumI0ntegerDigits: 2, useGrouping: false})}, on ${month[mo]} ${d}, ${y}.`;
+    clock.innerHTML = `It's currently ${h}:${m.toLocaleString(`en-US`,{minimumIntegerDigits: 2, useGrouping: false})}:${s.toLocaleString(`en-US`,{minimumIntegerDigits: 2, useGrouping: false})}, on ${month[mo]} ${d}, ${y}.`;
     console.log(`time is ${h}:${m}:${s} on ${mo}/${d}/${y}`);
 }
 setInterval(updateClock, 1000);
