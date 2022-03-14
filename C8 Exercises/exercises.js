@@ -22,7 +22,7 @@ function asciiCapitalize(str) {
 console.log(asciiCapitalize("Oh what a beautiful morning."));
 
 /* === Exercise 3 === */
-const candidate = [5, 5, 10, 10, 25, 15, 20, 20];
+const candidate = [5, 5, 10, 10, 15, 15, 20, 20];
 const totalTime = candidate.reduce((a, b) => a + b, 0) + 0;
 
 function interview (subject = [], time = 0) {
