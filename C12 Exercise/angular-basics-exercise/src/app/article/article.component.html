@@ -1,0 +1,4 @@
+<h1 [ngStyle]="{'background-color': (isTechRelated ? 'lightblue' : 'yellow')}">{{title}}</h1>
+<p *ngIf="isTechRelated === false">{{content}}</p>
+<p *ngIf="isTechRelated === true">{{techContent}}</p>
+<button (click)="toggleTechRelated()">Toggle Tech Related</button>
