@@ -6,10 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title:string = 'header';
-
-  updateTitle(text) {
-    this.title = text;
-    console.log(this.title);
-  }
+  title = 'basic-ngFor-exercise';
+  foods:string[] = ['apple', 'pizza', 'salad', 'fish filet', 'curry', 'banana'];
 }

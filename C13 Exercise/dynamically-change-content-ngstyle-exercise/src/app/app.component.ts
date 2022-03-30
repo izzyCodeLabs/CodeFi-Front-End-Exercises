@@ -6,10 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title:string = 'header';
+  title = 'dynamically-change-content-ngstyle-exercise';
+  changeColor:string = 'green';
 
-  updateTitle(text) {
-    this.title = text;
-    console.log(this.title);
-  }
 }

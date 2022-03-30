@@ -6,10 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title:string = 'header';
+  title = 'basic-ngif-else-exercise';
+  isShow:boolean = true;
 
-  updateTitle(text) {
-    this.title = text;
-    console.log(this.title);
+  reverseShow() {
+    if(this.isShow === true) {
+      this.isShow = false;
+    } else {
+      this.isShow = true;
+    }
   }
 }

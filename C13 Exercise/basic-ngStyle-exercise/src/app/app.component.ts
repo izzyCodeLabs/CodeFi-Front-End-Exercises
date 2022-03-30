@@ -6,10 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title:string = 'header';
-
-  updateTitle(text) {
-    this.title = text;
-    console.log(this.title);
-  }
+  title = 'basic-ngStyle-exercise';
+  myColor:string = 'red'
 }
