@@ -1,0 +1,16 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.item {
+  border: 1px solid rgba(0, 0, 0, 0.144);
+  padding: 2rem;
+}
+
+.dark-mode {
+  background-color: rgb(36, 43, 51);
+  color: white;
+}

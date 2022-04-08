@@ -1,0 +1,7 @@
+<div class="flex-container" [ngClass]="{'dark-mode': isDarkMode}">
+  <div class="item">
+    <h1 [ngStyle]="{'fontSize': isDarkMode ? '60px' : '32px'}">My Posts</h1>
+    <button (click)="changeDarkMode()">Dark Mode</button>
+    <div class="form-control"></div>
+  </div>
+</div>
