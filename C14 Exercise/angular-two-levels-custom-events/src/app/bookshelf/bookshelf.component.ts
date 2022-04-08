@@ -7,14 +7,9 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class BookshelfComponent implements OnInit {
 
-  @Output() sendBook = new EventEmitter<{book:{title:string, author:string}}>();
-
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onSendBook(newBook:{title:string, author:string}) {
-    this.sendBook.emit(newBook);
-  }
 }

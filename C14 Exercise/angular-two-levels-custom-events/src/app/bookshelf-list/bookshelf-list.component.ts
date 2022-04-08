@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-bookshelf-list',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bookshelf-list.component.css']
 })
 export class BookshelfListComponent implements OnInit {
-
+  @Output() sendBook = new EventEmitter<{book:{title:string, author:string}}>();
   books = [{title: "Book1", author:"Author1"}, {title: "Book2", author:"Author2"}, {title: "Book3", author:"Author3"}];
 
   constructor() { }
@@ -14,4 +14,7 @@ export class BookshelfListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSendBook(newBook:{title:string, author:string}) {
+    this.sendBook.emit(newBook);
+  }
 }
