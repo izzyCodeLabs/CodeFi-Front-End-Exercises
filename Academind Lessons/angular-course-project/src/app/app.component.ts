@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Recipe } from './recipe-book/recipe.model';
 
 @Component({
   selector: 'app-root',
@@ -6,10 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-two-levels-custom-events';
-  book = {title:"n/a", author:"n/a"}
+  title = 'angular-course-project';
+  loadedFeature = 'recipe';
 
-  updateBook(newBook:{title:string, author:string}) {
-    this.book = newBook;
+  onNavigate(feature:string) {
+    this.loadedFeature = feature;
   }
 }
