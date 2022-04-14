@@ -13,9 +13,10 @@ export class SearchComponent implements OnInit {
 
   ngOnInit(): void {
     //this.datacenters =
-    fetch('http://example.com/movies.json')
+    fetch('https://xivapi.com/servers/dc')
       .then(response => response.json())
-      .then(data => this.datacenters = data);
+      .then(data => this.datacenters = data)
+      .then(() => console.log(this.datacenters));
 
   }
 
