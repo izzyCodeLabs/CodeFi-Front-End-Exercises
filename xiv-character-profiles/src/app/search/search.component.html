@@ -1,6 +1,13 @@
-<input type="text" placeholder="Input a character name here">
-<select name="" id="" class="form-select">
-  <optgroup label="Crystal">
-    <option>Placeholder</option>
-  </optgroup>
-</select>
+<div class="container">
+  <input type="text" placeholder="Input a character name here">
+  <select name="test" id="" class="form-select">
+    <optgroup *ngFor='let datacenter of datacenters | keyvalue' label='{{datacenter.key}}'>
+      <option *ngFor='let world of datacenter.value'>{{world}}</option>
+    </optgroup>
+  </select>
+</div>
+<!--
+<div class="spinner-border" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+-->
