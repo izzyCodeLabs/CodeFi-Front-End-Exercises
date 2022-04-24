@@ -7,10 +7,5 @@ import { Recipe } from './recipe-book/recipe.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-course-project';
-  loadedFeature = 'recipe';
 
-  onNavigate(feature:string) {
-    this.loadedFeature = feature;
-  }
 }
